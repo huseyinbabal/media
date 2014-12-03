@@ -1,0 +1,31 @@
+{
+  "name": "digitalocean-node",
+  "description": "NodeJS Client API for DigitalOcean",
+  "version": "1.0.0",
+  "author": "Hüseyin BABAL",
+  "keywords": [
+    "digitalocean",
+    "api",
+    "oauth"
+  ],
+  "dependencies": {
+    "expect.js": "^0.3.1",
+    "querystring": "^0.2.0",
+    "request": "^2.49.0"
+  },
+  "devDependencies": {
+    "mocha": "1.8.1",
+    "nock": "0.51.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "main": "./lib/digitalocean",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/huseyinbabal/digitalocean-node.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/* -t 70000 -R spec --bail"
+  }
+}
