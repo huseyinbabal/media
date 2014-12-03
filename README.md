@@ -1,4 +1,3 @@
-digitalocean-node
-=================
-
-NodeJS API for DigitalOcean
+media
+=====
+Sample Media Client for HTTP Mock Testing
