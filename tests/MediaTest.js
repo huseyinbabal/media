@@ -164,6 +164,16 @@ describe('Foo NodeJS Client API Tests', function () {
                 done()
             })
         })
+
+        it('should log pending mocks', function(done) {
+            var scope = nock('http://api.example.com')
+                .persist()
+                .get('/')
+                .reply(200, 'OK');
+            if (!scope.isDone()) {
+                console.error('Pending Mocks: %j', scope.pendingMocks());
+            }
+        })
     })
     describe('Music Tests', function () {
         it('should create a new music', function (done) {

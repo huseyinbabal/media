@@ -1,12 +1,11 @@
 {
-  "name": "digitalocean-node",
-  "description": "NodeJS Client API for DigitalOcean",
+  "name": "media",
+  "description": "Simple Media Client Library for HTTP Mock Testing",
   "version": "1.0.0",
   "author": "Hüseyin BABAL",
   "keywords": [
-    "digitalocean",
-    "api",
-    "oauth"
+    "nock",
+    "http mock"
   ],
   "dependencies": {
     "expect.js": "^0.3.1",
@@ -20,12 +19,12 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "main": "./lib/digitalocean",
+  "main": "./lib/media",
   "repository": {
     "type": "git",
-    "url": "http://github.com/huseyinbabal/digitalocean-node.git"
+    "url": "http://github.com/huseyinbabal/media.git"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha tests/* -t 70000 -R spec --bail"
+    "test": "./node_modules/.bin/mocha tests/MediaTest.js -t 70000 -R spec --bail"
   }
 }
