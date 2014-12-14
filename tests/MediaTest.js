@@ -172,6 +172,7 @@ describe('Foo NodeJS Client API Tests', function () {
                 .reply(200, 'OK');
             if (!scope.isDone()) {
                 console.error('Pending Mocks: %j', scope.pendingMocks());
+                done()
             }
         })
     })
